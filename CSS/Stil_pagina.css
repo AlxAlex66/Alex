@@ -7,6 +7,12 @@
   75%{opacity:0.5; top: 0px;}
   100%{opacity:1; }
 }
+@keyframes Aparitie-iconite {
+
+  0%{opacity:0;left: -300px;}
+  75%{opacity:0.5; top: 0px;}
+  100%{opacity:1; }
+}
 .colorare_h1{
   position: relative;
   color: #ffbf80;
@@ -29,7 +35,7 @@
 
 .fundal {
   font-size:20px;
-  padding:30px 30px 60px 30px;
+  padding:20px 20px 50px 50px;
   background-image:url('Imagini/lemn_Negru.jpg');
 
 
@@ -55,6 +61,7 @@
   top: 100px;
   left: 10px;
   text-align: center;
+  animation-name: Aparitie2;
 
 
 
@@ -94,4 +101,25 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.iconite-retele-socializare {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+
+
+}
+
+
+.iconite-retele-socializare:hover {
+  background-color: #bd5d38;
+  color: red;
 }
