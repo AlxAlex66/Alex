@@ -1,18 +1,11 @@
 .colorare_text {
+  margin-left: 50px;
+  margin-right:50px;
+  margin-bottom: 30px;
+  margin-top: 40px;
   color:white;
 }
-@keyframes Aparitie {
 
-  0%{opacity:0;top: -300px;}
-  75%{opacity:0.5; top: 0px;}
-  100%{opacity:1; }
-}
-@keyframes Aparitie-iconite {
-
-  0%{opacity:0;left: -300px;}
-  75%{opacity:0.5; top: 0px;}
-  100%{opacity:1; }
-}
 .colorare_h1{
   position: relative;
   color: #ffbf80;
@@ -28,16 +21,11 @@
   animation-delay: 1s;
 
 
-
-
 }
 
 
-.fundal {
-  font-size:20px;
-  padding:20px 20px 50px 50px;
+body {
   background-image:url('Imagini/lemn_Negru.jpg');
-
 
 }
 
@@ -88,7 +76,6 @@
 
 
 
-
 @keyframes fadeInDown {
     0% {
         opacity: 0;
@@ -122,4 +109,92 @@
 .iconite-retele-socializare:hover {
   background-color: #bd5d38;
   color: red;
+}
+
+
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #8B0000;
+}
+
+.lista-navigare{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+
+}
+
+.lista-navigare{
+  list-style: none;
+}
+.lista-navigare a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+
+}
+.buton-mobil{
+  display: none;
+  cursor: pointer;
+}
+
+.buton-mobil div{
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: white;
+
+}
+@media screen and (max-width:1500px){
+  .lista-navigare{
+    display: flex;
+    justify-content: space-around;
+    width: 50%
+  }
+
+@media screen and (max-width:1000px){
+  .lista-navigare{
+    display: flex;
+    justify-content: space-around;
+    width: 60%
+  }
+
+}
+
+
+@media screen and (max-width:768px){
+  body{
+    overflow-x:hidden;
+  }
+  .lista-navigare{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #8B0000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white:50%;
+    transform: translateX(100%);
+    transform: transform 0.5s ease-in;
+
+
+  }
+  .lista-navigare li{
+    opacity: 0;
+  }
+  .buton-mobil{
+    display: block;
+  }
+
+}
+.lista-navigare-activare{
+  transform: translateX(0%);
 }
