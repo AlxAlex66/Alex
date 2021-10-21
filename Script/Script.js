@@ -23,7 +23,7 @@ function navSlide(){
 
    });
    // animatie buton de MENIU
-   butonMeniu.classList.toggle('transformare-buton-meniu')
+   butonMeniu.classList.toggle('transformare-buton-meniu');
 
  });
 
