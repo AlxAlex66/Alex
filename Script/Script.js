@@ -30,5 +30,3 @@ function navSlide(){
 
 
 }
-
-navSlide();
