@@ -103,6 +103,14 @@ body {                                                   /* Adaugare imagine de 
 }
 
 
+.accesare_facebook{
+  position: fixed;
+  top: 100px;
+  left: 10px;
+  text-align: center;
+}
+
+
 
 nav{                                                      /* Setari basic pentru bara de navigatie */
   display: flex;
@@ -212,7 +220,6 @@ nav{                                                      /* Setari basic pentru
 .transformare-buton-meniu .linie1{
   transform: rotate(-45deg) translate(-5px,6px);
 
-
 }
 .transformare-buton-meniu .linie2{
   opacity: 0;
@@ -220,5 +227,4 @@ nav{                                                      /* Setari basic pentru
 }
 .transformare-buton-meniu .linie3{
     transform: rotate(+45deg) translate(-5px,-6px);
-  
 }
