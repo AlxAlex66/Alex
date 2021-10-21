@@ -30,6 +30,15 @@ function navSlide(){
 
 
 }
+const trimitereSus = document.querySelector('.mergiSus');
+  window.addEventListener('scroll', () => {
+    if(window.pageYOffset > 100) {
+      trimitereSus.classList.add('active');
+    }else
+    {
+      trimitereSus.classList.remove('active');
+    }
+})
 
 
 

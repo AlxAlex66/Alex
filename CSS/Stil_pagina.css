@@ -1,4 +1,4 @@
-.pachet{
+.pachet{                                /* pentru MOBIL sa nu apara ce este inafara razei de inspectare a paginii  */
     position: relative;
     display: block;
     height: 100%;
@@ -113,13 +113,49 @@ body {                                                   /* Adaugare imagine de 
 }
 
 
-.accesare_facebook{
+.accesare_facebook{                                        /* Fixare Iconite de socializare  */
   position: fixed;
   top: 100px;
   left: 10px;
   text-align: center;
 }
 
+
+html{
+  scroll-behavior: smooth;                             /* pentru derulare fina  */
+}
+
+.mergiSus{
+  background-color: white;
+  position: fixed;
+  bottom: 15px;
+  right: 35px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+
+
+}
+.mergiSus.active{
+  bottom: :25px;
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(-30px);
+}
+
+.mergiSus:hover{
+  background-color: red;
+
+}
 
 
 nav{                                                      /* Setari basic pentru bara de navigatie */
