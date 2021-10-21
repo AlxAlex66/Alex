@@ -1,4 +1,4 @@
-.colorare_text {
+.colorare_text {                       /* folosit pentru texul scris in pagina */
   margin-left: 50px;
   margin-right:50px;
   margin-bottom: 30px;
@@ -6,7 +6,7 @@
   color:white;
 }
 
-.colorare_h1{
+.colorare_h1{                                  /* Folosit pentru Titluri */
   position: relative;
   color: #ffbf80;
   border: 5px solid;
@@ -24,12 +24,12 @@
 }
 
 
-body {
+body {                                                   /* Adaugare imagine de fundal pemtru pagina */
   background-image:url('Imagini/lemn_Negru.jpg');
 
 }
 
-.rontunjire_imagini{
+.rontunjire_imagini{                                     /* Costumizarea imaginilor adaufate in pagina  */
 
   border-radius: 20px;
   border-color: #ffbf80;
@@ -37,39 +37,30 @@ body {
 }
 
 
-.pozitionare_Cv{
+.pozitionare_Cv{                                          /* Pntru Butinul CV */
   position:relative;
   bottom: 5px;
   left: -95px;
 }
 
-.accesare_facebook{
-
-  position: fixed;
-  top: 100px;
-  left: 10px;
-  text-align: center;
-  animation-name: Aparitie2;
 
 
 
-}
-@keyframes miscare {
+@keyframes miscare {                                      /* Animatia pentru poze cand trecem cu cursorul peste ele */
   0%{top:0px}
   50%{top:10px}
   100%{top:0px}
 
 }
 
-
-.animatie:hover{
+.animatie:hover{                                           /* Funcita de accesare a animatiei  */
   position: relative;
   animation-name: miscare;
   animation-duration: 1s;
 
 
 }
-.afisare_flex{
+.afisare_flex{                                             /* Afisarea Pozelor */
   display: flex;
   flex-direction:row;
 }
@@ -90,7 +81,7 @@ body {
     }
 }
 
-.iconite-retele-socializare {
+.iconite-retele-socializare {                              /* Costumizarea iconitelor de socializare  */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -106,14 +97,14 @@ body {
 }
 
 
-.iconite-retele-socializare:hover {
+.iconite-retele-socializare:hover {                        /* Pentru animare cand trecem peste ele cu corsorl */
   background-color: #bd5d38;
   color: red;
 }
 
 
 
-nav{
+nav{                                                      /* Setari basic pentru bara de navigatie */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -121,7 +112,7 @@ nav{
   background-color: #8B0000;
 }
 
-.lista-navigare{
+.lista-navigare{                                          /* Afisarea barei de navigatie */
   display: flex;
   justify-content: space-around;
   width: 40%;
@@ -131,7 +122,7 @@ nav{
 .lista-navigare{
   list-style: none;
 }
-.lista-navigare a{
+.lista-navigare a{                                               /* Pentru afisarea specificatorilo de pagina din bara de navigatie STIL DESCKTOP*/
   color: white;
   text-decoration: none;
   letter-spacing: 3px;
@@ -139,40 +130,42 @@ nav{
   font-size: 14px;
 
 }
-.buton-mobil{
+.buton-mobil{                                                   /* Pentru butonul de meniu STIL DESCKTOP*/
   display: none;
   cursor: pointer;
 }
 
-.buton-mobil div{
+.buton-mobil div{                                                 /* Butonul de MENIU*/
   width: 25px;
   height: 3px;
   margin: 5px;
   background-color: white;
+  transition: all 0.3s ease;
 
 }
-@media screen and (max-width:1500px){
+@media screen and (max-width:1500px){                             /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
   .lista-navigare{
     display: flex;
     justify-content: space-around;
-    width: 50%
+    width: 50%;
   }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1000px){                               /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
   .lista-navigare{
     display: flex;
     justify-content: space-around;
-    width: 60%
+    width: 60%;
+    color: white;
   }
 
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px){                                /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
   body{
     overflow-x:hidden;
   }
-  .lista-navigare{
+  .lista-navigare{                                                /* Pentru afisarea specificatorilo de pagina din bara de navigatie STIL MOBIL*/
     position: absolute;
     right: 0px;
     height: 92vh;
@@ -182,8 +175,9 @@ nav{
     flex-direction: column;
     align-items: center;
     white:50%;
-    transform: translateX(100%);
-    transform: transform 1.5s ease-in;
+    transform: translateX(100%);         /* translatam bara de navigatiespre pe axa orizontala dreapta */
+    transition: transform 0.5s ease-in;  /* folosim asta pentru tranzitie cand translatam bara de navitaie creand astfel un efect animat */
+
 
 
   }
@@ -195,21 +189,36 @@ nav{
   }
 
 }
-.lista-navigare-activare{
-  transform: translateX(0%);
-}
 
 
 
 @keyframes  miscareMeniu{
   from{
     opacity: 0;
-    transform:(50px);
+    transform:translateX(50px);
 
   }
   to{
     opacity: 1;
-    transform: (0px);
+    transform:translateX(0px);
   }
 
+}
+.lista-navigare-activare{
+  transform: translateX(0%);      /* translatam pe axta orizontala bara de navigatie */
+
+}
+
+.transformare-buton-meniu .linie1{
+  transform: rotate(-45deg) translate(-5px,6px);
+
+
+}
+.transformare-buton-meniu .linie2{
+  opacity: 0;
+
+}
+.transformare-buton-meniu .linie3{
+    transform: rotate(+45deg) translate(-5px,-6px);
+  
 }
