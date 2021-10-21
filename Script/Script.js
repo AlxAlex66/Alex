@@ -1,4 +1,3 @@
-
 function navSlide(){
   //elemente selectate
   const butonMeniu = document.querySelector('.buton-mobil');
