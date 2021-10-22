@@ -35,7 +35,7 @@
 
 
 body {                                                   /* Adaugare imagine de fundal pemtru pagina */
-  background-image:url('Imagini/lemn_Negru.jpg');
+  background-image:url('Imagini/lemn.jpg');
 
 }
 
@@ -186,6 +186,18 @@ nav{                                                      /* Setari basic pentru
   font-weight: bold;
   font-size: 14px;
 
+}
+.menu1:hover {
+  color: black;
+}
+.menu2:hover {
+  color: black;
+}
+.menu3:hover {
+  color: black;
+}
+.menu4:hover {
+  color: black;
 }
 .buton-mobil{                                                   /* Pentru butonul de meniu STIL DESCKTOP*/
   display: none;
