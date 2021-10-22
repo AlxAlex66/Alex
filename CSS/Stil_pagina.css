@@ -35,7 +35,7 @@
 
 
 body {                                                   /* Adaugare imagine de fundal pemtru pagina */
-  background-image:url('Imagini/lemn.jpg');
+  background-image:url('Imagini/lemn_Negru.jpg');
 
 }
 
@@ -294,13 +294,14 @@ nav{                                                      /* Setari basic pentru
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px%;
   justify-content: space-between;
 
 
 }
 .portofoliu img{
-  width: 600px;
+
   margin-top: 20px;
   margin-bottom: 20px;
+  max-width: 90%;
+  height: auto;
 }
