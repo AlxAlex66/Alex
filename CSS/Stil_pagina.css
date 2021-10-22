@@ -291,6 +291,8 @@ nav{                                                      /* Setari basic pentru
 }
 
 .portofoliu{
+
+
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -302,13 +304,17 @@ nav{                                                      /* Setari basic pentru
 
 }
 .portofoliu img{
-  width: 250px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 150px;
   margin-top:5px;
   margin-bottom: 5px;
   margin-left: 5px;
   margin-right: 5px;
 
-  flex: 2 1 33%%;
+  flex: 1 1 10em;
   flex-wrap: wrap;
 
 }
