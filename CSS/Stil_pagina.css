@@ -292,16 +292,23 @@ nav{                                                      /* Setari basic pentru
 
 .portofoliu{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-content: center;
+  margin-left: 20px;
+  flex-wrap: wrap;
+
 
 
 }
 .portofoliu img{
+  width: 250px;
+  margin-top:5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 
-  margin-top: 20px;
-  margin-bottom: 20px;
-  max-width: 90%;
-  height: auto;
+  flex: 2 1 33%%;
+  flex-wrap: wrap;
+
 }
