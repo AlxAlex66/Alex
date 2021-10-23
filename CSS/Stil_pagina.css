@@ -213,7 +213,8 @@ nav{                                                      /* Setari basic pentru
 
 }
 
-  
+
+
 @media screen and (max-width:1500px){                             /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
   .lista-navigare{
     display: flex;
@@ -304,12 +305,10 @@ nav{                                                      /* Setari basic pentru
 
 
 
+
 }
 .portofoliu img{
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
   max-width: 150px;
   margin-top:5px;
   margin-bottom: 5px;
@@ -318,5 +317,32 @@ nav{                                                      /* Setari basic pentru
 
   flex: 1 1 10em;
   flex-wrap: wrap;
+
+}
+@media screen and (max-width:2680px){
+  .portofoliu img{
+
+    max-width: 350px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    flex: 1 1 10em;
+    flex-wrap: wrap;
+
+}
+
+@media screen and (max-width:768px){
+  .portofoliu img{
+
+    max-width: 150px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    flex: 1 1 10em;
+    flex-wrap: wrap;
 
 }
