@@ -212,6 +212,8 @@ nav{                                                      /* Setari basic pentru
   transition: all 0.3s ease;
 
 }
+
+  
 @media screen and (max-width:1500px){                             /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
   .lista-navigare{
     display: flex;
