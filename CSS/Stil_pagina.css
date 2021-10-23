@@ -214,6 +214,48 @@ nav{                                                      /* Setari basic pentru
 }
 
 
+@media screen and (max-width:3000px){                             /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
+  .lista-navigare{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .portofoliu img{
+
+    max-width: 500px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    flex: 1 1 10em;
+    flex-wrap: wrap;
+
+}
+}
+
+
+@media screen and (max-width:3000px){                             /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
+  .lista-navigare{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .portofoliu img{
+
+    max-width: 450px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    flex: 1 1 10em;
+    flex-wrap: wrap;
+
+}
+}
+
+
 
 @media screen and (max-width:1500px){                             /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
   .lista-navigare{
@@ -221,6 +263,42 @@ nav{                                                      /* Setari basic pentru
     justify-content: space-around;
     width: 50%;
   }
+  .portofoliu img{
+
+    max-width: 350px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    flex: 1 1 10em;
+    flex-wrap: wrap;
+
+}
+}
+
+
+
+@media screen and (max-width:1500px){                             /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
+  .lista-navigare{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .portofoliu img{
+
+    max-width: 250px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    flex: 1 1 10em;
+    flex-wrap: wrap;
+
+}
+}
+
 
 @media screen and (max-width:1000px){                               /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
   .lista-navigare{
@@ -229,6 +307,18 @@ nav{                                                      /* Setari basic pentru
     width: 60%;
     color: white;
   }
+  .portofoliu img{
+
+    max-width: 200px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    flex: 1 1 10em;
+    flex-wrap: wrap;
+
+}
 
 }
 
@@ -260,7 +350,63 @@ nav{                                                      /* Setari basic pentru
     display: block;
   }
 
+  .portofoliu img{
+    width: 100$;
+    max-width: 200px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    flex: 1 1 10em;
+    flex-wrap: wrap;
+
 }
+
+}
+
+@media screen and (max-width:768px){                                /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
+  body{
+    overflow-x:hidden;
+  }
+  .lista-navigare{                                                /* Pentru afisarea specificatorilo de pagina din bara de navigatie STIL MOBIL*/
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #8B0000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:35%;
+    transform: translateX(100%);         /* translatam bara de navigatiespre pe axa orizontala dreapta */
+    transition: transform 0.5s ease-in;  /* folosim asta pentru tranzitie cand translatam bara de navitaie creand astfel un efect animat */
+
+
+
+  }
+  .lista-navigare li{
+    opacity: 0;
+  }
+  .buton-mobil{
+    display: block;
+  }
+
+  .portofoliu img{
+    width: 100$;
+    max-width: 300px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    flex: 1 1 10em;
+    flex-wrap: wrap;
+
+}
+
+}
+
 
 
 
@@ -305,44 +451,5 @@ nav{                                                      /* Setari basic pentru
 
 
 
-
-}
-.portofoliu img{
-
-  max-width: 150px;
-  margin-top:5px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-
-  flex: 1 1 10em;
-  flex-wrap: wrap;
-
-}
-@media screen and (max-width:2680px){
-  .portofoliu img{
-
-    max-width: 350px;
-    margin-top:5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-
-    flex: 1 1 10em;
-    flex-wrap: wrap;
-
-}
-
-@media screen and (max-width:768px){
-  .portofoliu img{
-
-    max-width: 150px;
-    margin-top:5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-
-    flex: 1 1 10em;
-    flex-wrap: wrap;
 
 }
