@@ -279,26 +279,6 @@ nav{                                                      /* Setari basic pentru
 
 
 
-@media screen and (max-width:1500px){                             /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
-  .lista-navigare{
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-  }
-  .portofoliu img{
-
-    max-width: 250px;
-    margin-top:5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-
-    flex: 1 1 10em;
-    flex-wrap: wrap;
-
-}
-}
-
 
 @media screen and (max-width:1000px){                               /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
   .lista-navigare{
@@ -309,7 +289,7 @@ nav{                                                      /* Setari basic pentru
   }
   .portofoliu img{
 
-    max-width: 200px;
+    max-width: 225px;
     margin-top:5px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -319,6 +299,7 @@ nav{                                                      /* Setari basic pentru
     flex-wrap: wrap;
 
 }
+
 
 }
 
@@ -394,7 +375,7 @@ nav{                                                      /* Setari basic pentru
 
   .portofoliu img{
     width: 100$;
-    max-width: 300px;
+    max-width: 270px;
     margin-top:5px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -405,9 +386,67 @@ nav{                                                      /* Setari basic pentru
 
 }
 
+
+}
+@media screen and (max-width:350px){                                /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
+  body{
+    overflow-x:hidden;
+  }
+  .lista-navigare{                                                /* Pentru afisarea specificatorilo de pagina din bara de navigatie STIL MOBIL*/
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #8B0000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:35%;
+    transform: translateX(100%);         /* translatam bara de navigatiespre pe axa orizontala dreapta */
+    transition: transform 0.5s ease-in;  /* folosim asta pentru tranzitie cand translatam bara de navitaie creand astfel un efect animat */
+
+
+
+  }
+  .lista-navigare li{
+    opacity: 0;
+  }
+  .buton-mobil{
+    display: block;
+  }
+
+  .portofoliu img{
+    width: 100$;
+    max-width: 250px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1 1 10em;
+    flex-wrap: wrap;
+
 }
 
 
+
+}
+
+.portofoliu img:hover{
+   transform: scale(1.1);
+   transition-delay: 0s;
+ }
+
+.portofoliu h2{
+  margin-bottom: 50px;
+  margin-top: 20px;
+  color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
 
 
 @keyframes  miscareMeniu{
@@ -441,15 +480,35 @@ nav{                                                      /* Setari basic pentru
 
 .portofoliu{
 
-
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-self:center;
+
+  justify-content: center;
   align-content: center;
+
+
+}
+
+
+
+
+.portofoliu img{
+  position: relative;
   margin-left: 20px;
-  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 
-
-
-
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  color: white;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+}
+.portofoliu img {
+  border-radius: 0% 0% 0% 0% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.25);
 }
