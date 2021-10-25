@@ -39,6 +39,9 @@ body {                                                   /* Adaugare imagine de 
 
 }
 
+
+
+
 .rontunjire_imagini{                                     /* Costumizarea imaginilor adaufate in pagina  */
 
   border-radius: 20px;
@@ -230,6 +233,7 @@ nav{                                                      /* Setari basic pentru
 
     flex: 1 1 10em;
     flex-wrap: wrap;
+      transition: transform 0.5s ease-in;
 
 }
 }
@@ -251,6 +255,7 @@ nav{                                                      /* Setari basic pentru
 
     flex: 1 1 10em;
     flex-wrap: wrap;
+      transition: transform 0.5s ease-in;
 
 }
 }
@@ -265,14 +270,15 @@ nav{                                                      /* Setari basic pentru
   }
   .portofoliu img{
 
-    max-width: 350px;
+    max-width: 200px;
     margin-top:5px;
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
 
     flex: 1 1 10em;
-    flex-wrap: wrap;
+    flex-wrap: wrap
+      transition: transform 0.5s ease-in;;
 
 }
 }
@@ -289,7 +295,8 @@ nav{                                                      /* Setari basic pentru
   }
   .portofoliu img{
 
-    max-width: 225px;
+    max-width: 190px;
+    max-width: 50%
     margin-top:5px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -297,8 +304,10 @@ nav{                                                      /* Setari basic pentru
 
     flex: 1 1 10em;
     flex-wrap: wrap;
+      transition: transform 0.5s ease-in;
 
 }
+
 
 
 }
@@ -332,8 +341,7 @@ nav{                                                      /* Setari basic pentru
   }
 
   .portofoliu img{
-    width: 100$;
-    max-width: 200px;
+    max-width: 100%;
     margin-top:5px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -374,8 +382,7 @@ nav{                                                      /* Setari basic pentru
   }
 
   .portofoliu img{
-    width: 100$;
-    max-width: 270px;
+    max-width: 90%;
     margin-top:5px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -511,4 +518,49 @@ nav{                                                      /* Setari basic pentru
 .portofoliu img {
   border-radius: 0% 0% 0% 0% / 0% 0% 5% 5% ;
   box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+
+.poza-profil img{
+  position: relative;
+  left: 100px;
+  transform: rotate(15deg);
+  display: inline;
+
+
+}
+
+@keyframes miscare-poza-profil{
+
+      0% {
+          opacity: 0;
+          transform: rotate(15deg);
+          transform: translateX(-500px);
+
+      }
+      50%{
+         opacity: 0.3;
+      }
+      100% {
+          opacity: 1;
+          transform: translateX(100px);
+          transform: rotate(15deg);
+
+  }
+}
+
+
+
+.poza-profil img{
+  animation-play-state: running;
+
+    animation-name: miscare-poza-profil;
+    animation-duration: 3s;
+
+}
+.poza-profil p{
+
+  display: inline;
+  font-size:2rem;
+  color: white;
 }
