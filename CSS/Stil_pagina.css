@@ -673,3 +673,49 @@ nav{                                                      /* Setari basic pentru
 
   }
 }
+
+
+
+.pagina-despre{
+
+  color: white;
+
+  font-size: 3vw;
+  text-align: center;
+}
+
+.exp img{
+
+ position: relative;
+ width: 20%;
+}
+
+.edu img{
+
+
+ max-width: 200px;
+position: relative;
+width: 15%;
+}
+
+.skill img{
+float: right;
+}
+
+.exp {
+
+
+}
+
+.edu {
+
+
+}
+
+.skill {
+
+}
+.prj{
+  color: white;
+  font-size: 3vw;
+}
