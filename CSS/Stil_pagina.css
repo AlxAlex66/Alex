@@ -37,9 +37,21 @@
 body {                                                   /* Adaugare imagine de fundal pemtru pagina */
   background-image:url('Imagini/lemn_Negru.jpg');
 
+
+}
+.pz-cover{
+  padding-left: 26%;
+  padding-right: 20%;
+    background-image:url('Imagini/antet.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+      outline: 3px solid red;
 }
 
+@media query {
 
+}
 
 
 .rontunjire_imagini{                                     /* Costumizarea imaginilor adaufate in pagina  */
@@ -47,6 +59,7 @@ body {                                                   /* Adaugare imagine de 
   border-radius: 20px;
   border-color: #ffbf80;
   box-shadow:  0px 0px 10px red;
+
 }
 
 
@@ -522,10 +535,9 @@ nav{                                                      /* Setari basic pentru
 
 
 .poza-profil img{
-  position: relative;
   left: 100px;
-  transform: rotate(15deg);
-  display: inline;
+  transform: rotate(10deg);
+
 
 
 }
@@ -534,17 +546,17 @@ nav{                                                      /* Setari basic pentru
 
       0% {
           opacity: 0;
-          transform: rotate(15deg);
-          transform: translateX(-500px);
+          transform: rotate(0deg);
+          transform: translateX(-100px);
 
       }
-      50%{
-         opacity: 0.3;
-      }
+
+
       100% {
           opacity: 1;
           transform: translateX(100px);
-          transform: rotate(15deg);
+          transform: rotate(10deg)
+
 
   }
 }
@@ -552,15 +564,41 @@ nav{                                                      /* Setari basic pentru
 
 
 .poza-profil img{
-  animation-play-state: running;
-
+    padding-top: 0;
+    animation-play-state: running;
+    margin-top:28%;
+    margin-left: -25px;
+   border: 15px solid #f4f0eb;
+    width: 25%;
     animation-name: miscare-poza-profil;
-    animation-duration: 3s;
+    animation-duration: 2s;
+    float: left;
+
+
+
 
 }
-.poza-profil p{
 
-  display: inline;
-  font-size:2rem;
-  color: white;
+
+.text-prezentare {
+
+  width: 60%;
+  padding-left: 20%;
+  padding-right:6%;
+
+
+    padding-top: 43%;
+    font-size: 1.5vw;
+
+
+}
+
+.text-prezentare p{
+ width: 180%;
+ padding-left: 20%;
+ padding-top: 15%;
+ color: white;
+
+
+
 }
