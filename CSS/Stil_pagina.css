@@ -114,7 +114,7 @@ body {                                                   /* Adaugare imagine de 
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center top;
-        
+
 
   }
 
@@ -177,9 +177,10 @@ body {                                                   /* Adaugare imagine de 
 
 
 .pozitionare_Cv{                                          /* Pntru Butinul CV */
-  position:relative;
-  bottom: 5px;
-  left: -95px;
+  display: flex;
+  justify-content: center;
+  color: white;
+
 }
 
 
@@ -295,7 +296,7 @@ nav{                                                      /* Setari basic pentru
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #8B0000;
+  background-color: #ff6600;
 }
 
 .lista-navigare{                                          /* Afisarea barei de navigatie */
@@ -448,7 +449,7 @@ nav{                                                      /* Setari basic pentru
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #8B0000;
+    background-color:#ff6600;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -489,7 +490,7 @@ nav{                                                      /* Setari basic pentru
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #8B0000;
+    background-color: #ff6600;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -530,7 +531,7 @@ nav{                                                      /* Setari basic pentru
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #8B0000;
+    background-color: #ff6600;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -702,18 +703,26 @@ width: 15%;
 float: right;
 }
 
-.exp {
+.exp h1{
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 20px 20px 20px 20px;
+  border-bottom: 6px solid #ff6600;
+
+
 
 
 }
 
-.edu {
-
-
+.edu h1{
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 20px 20px 20px 20px;
+  border-bottom: 6px solid #ff6600;
 }
 
-.skill {
-
+.skill h1{
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 20px 20px 20px 20px;
+  border-bottom: 6px solid #ff6600;
 }
 .prj{
   color: white;
