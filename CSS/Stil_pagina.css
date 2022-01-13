@@ -180,7 +180,16 @@ body {                                                   /* Adaugare imagine de 
   display: flex;
   justify-content: center;
   color: white;
+  width: auto;
 
+
+}
+
+.asezare_Cv{
+  
+  margin: 10px;
+  width: 20%;
+  
 }
 
 
