@@ -413,8 +413,8 @@ nav{                                                      /* Setari basic pentru
     margin-right: 5px;
 
     flex: 1 1 10em;
-    flex-wrap: wrap
-      transition: transform 0.5s ease-in;;
+    flex-wrap: wrap;
+      transition: transform 0.5s ease-in;
 
 }
 }
