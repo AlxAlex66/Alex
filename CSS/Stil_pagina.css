@@ -449,10 +449,7 @@ nav{                                                      /* Setari basic pentru
 
 }
 
-
-
 }
-
 
 @media screen and (max-width:768px){                                /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
   body{
@@ -494,6 +491,10 @@ nav{                                                      /* Setari basic pentru
 }
 
 }
+
+
+
+
 
 @media screen and (max-width:768px){                                /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
   body{
@@ -564,7 +565,7 @@ nav{                                                      /* Setari basic pentru
   }
 
   .portofoliu img{
-    width: 100$;
+    width: 100%;
     max-width: 250px;
     margin-top:5px;
     margin-bottom: 5px;
